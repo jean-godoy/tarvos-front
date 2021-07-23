@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-// import api from '../../services/api';
 import './main.css';
+
+import { getData } from '../../api/NesoApi/nesoApi'; 
+
 
 //components
 import Header from '../../components/Header/Header';
@@ -30,6 +32,10 @@ export default function Calendar(props: any) {
      */
     const handlerSubmit = (e: any) => {
         e.preventDefault();
+        const URL = 'AAAAA'
+        const data = getData(URL);
+        console.log('data', data);
+        
        
     }
 
